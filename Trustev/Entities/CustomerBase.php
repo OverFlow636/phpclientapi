@@ -63,6 +63,8 @@ namespace Trustev\Entities {
 		* @var string
 		*/
 		public $AccountNumber;
+		
+		public $SocialSecurityNumber;
 
 		/**
 		* @param $object null|array
@@ -79,6 +81,7 @@ namespace Trustev\Entities {
 				if(array_key_exists("Addresses", $object)) $this->Addresses = $object["Addresses"];
 				if(array_key_exists("SocialAccounts", $object)) $this->SocialAccounts = $object["SocialAccounts"];
 				if(array_key_exists("AccountNumber", $object)) $this->AccountNumber = $object["AccountNumber"];
+				if(array_key_exists("SocialSecurityNumber", $object)) $this->SocialSecurityNumber = $object["SocialSecurityNumber"];
 			}
 		}
 	}
