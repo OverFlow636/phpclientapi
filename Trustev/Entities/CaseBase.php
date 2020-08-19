@@ -66,6 +66,8 @@ namespace Trustev\Entities {
 		* @var \DateTime
 		*/
 		public $CaseType;
+		
+		public $IdentityConsentId;
 
 		/**
 		* @param $object null|array
@@ -82,7 +84,7 @@ namespace Trustev\Entities {
 				if(array_key_exists("Payments", $object)) $this->Payments = $object["Payments"];
 				if(array_key_exists("Timestamp", $object)) $this->Timestamp = $object["Timestamp"];
 				if(array_key_exists("CaseType", $object)) $this->CaseType = $object["CaseType"];
-
+				if(array_key_exists("IdentityConsentId", $object)) $this->IdentityConsentId = $object["IdentityConsentId"];
 			}
 		}
 	}
