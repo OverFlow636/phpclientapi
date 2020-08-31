@@ -110,6 +110,20 @@ namespace Trustev {
 			}
 			return self::GetAction(__FUNCTION__, array($caseId));
 		}
+		
+		public static function DoOTP($url, $data)
+		{
+			self::initialize();
+
+			return self::GetAction(__FUNCTION__, array($url), $data);
+		}
+
+		public static function SendOTP($url, $data)
+		{
+			self::initialize();
+
+			return self::GetAction(__FUNCTION__, array($url), $data);
+		}
 
 		/**
 		 * Post your Customer to an existing Case
