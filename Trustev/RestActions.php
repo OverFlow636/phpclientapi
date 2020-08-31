@@ -56,7 +56,9 @@ namespace Trustev {
 				"PostCaseStatus" => new Entities\RestAction("/case/%s/status", Entities\HttpMethodType::$Post),
 				"GetCaseStatus" => new Entities\RestAction("/case/%s/status/%s", Entities\HttpMethodType::$Get),
 				"GetCaseStatuses" => new Entities\RestAction("/case/%s/status", Entities\HttpMethodType::$Get),
-				"GetDetailedDecision" => new Entities\RestAction("/detaileddecision/%s", Entities\HttpMethodType::$Get)
+				"GetDetailedDecision" => new Entities\RestAction("/detaileddecision/%s", Entities\HttpMethodType::$Get),
+				"DoOTP" => new Entities\RestAction("/%s", Entities\HttpMethodType::$Post),
+				"SendOTP" => new Entities\RestAction("/%s", Entities\HttpMethodType::$Put),
 			);
 		}
 
